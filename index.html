@@ -20,22 +20,27 @@
   </dotlottie-wc>
 </div>
 
-<!-- Lottie Script -->
+<!-- Lottie -->
 <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+
+<style>
 #preloader {
   position: fixed;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff; /* use dark if needed */
-  z-index: 9999;
+  background: white;
+  z-index: 99999;
 }
+</style>
+
 <script>
 window.addEventListener("load", () => {
   document.getElementById("preloader").style.display = "none";
 });
 </script>
+
 
     <!-- Top Bar -->
     <div class="top-bar">
@@ -351,5 +356,6 @@ window.addEventListener("load", () => {
 
 </body>
 </html>
+
 
 
