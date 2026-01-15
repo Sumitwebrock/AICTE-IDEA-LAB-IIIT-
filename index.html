@@ -10,8 +10,33 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
 </head>
 <body>
+<!-- PRELOADER -->
+<div id="preloader">
+  <dotlottie-wc 
+    src="https://lottie.host/753f95d1-6587-4a18-b55a-baaeaa23f743/epiLjyYIAE.lottie"
+    style="width: 200px;height: 200px"
+    autoplay 
+    loop>
+  </dotlottie-wc>
+</div>
+
+<!-- Lottie Script -->
 <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
-<dotlottie-wc src="https://lottie.host/753f95d1-6587-4a18-b55a-baaeaa23f743/epiLjyYIAE.lottie" style="width: 300px;height: 300px" autoplay loop></dotlottie-wc>
+#preloader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff; /* use dark if needed */
+  z-index: 9999;
+}
+<script>
+window.addEventListener("load", () => {
+  document.getElementById("preloader").style.display = "none";
+});
+</script>
+
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
@@ -326,4 +351,5 @@
 
 </body>
 </html>
+
 
