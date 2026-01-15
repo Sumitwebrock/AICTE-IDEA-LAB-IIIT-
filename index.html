@@ -36,8 +36,11 @@
 </style>
 
 <script>
-window.addEventListener("load", () => {
-  document.getElementById("preloader").style.display = "none";
+document.addEventListener("DOMContentLoaded", () => {
+  // force show for 2 seconds
+  setTimeout(() => {
+    document.getElementById("preloader").style.display = "none";
+  }, 1000);
 });
 </script>
 
@@ -356,6 +359,7 @@ window.addEventListener("load", () => {
 
 </body>
 </html>
+
 
 
 
